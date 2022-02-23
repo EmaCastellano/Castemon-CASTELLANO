@@ -75,8 +75,7 @@ h2 {
 
 .redes { display: flex;
     justify-content: space-around;
-    /* margin-top: 200px; */
-    }
+        }
     
 .redes img {
     height: 50px;
