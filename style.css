@@ -73,17 +73,16 @@ h2 {
 
 /* estilos para footer  */
 
-.derechos {
-    text-align: right;
-}
-
-.redes img {
-    width: 10%;
-    height: 20%;
+.redes { display: flex;
+    justify-content: space-around;
+    /* margin-top: 200px; */
+    }
     
+.redes img {
+    height: 50px;
+    width: 50px;
 }
 
-.redes {
-    height: 400px;
-   }
- 
+.transicion { transition: all 2s;}
+
+.transicion:hover { transform: scale(2);}
