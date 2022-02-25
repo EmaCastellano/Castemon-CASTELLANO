@@ -1,0 +1,12 @@
+.redes { display: flex;
+    justify-content: space-around;
+        }
+    
+.redes img {
+    height: 50px;
+    width: 50px;
+}
+
+.transicion { transition: all 2s;}
+
+.transicion:hover { transform: scale(2);}

@@ -1,0 +1,36 @@
+@import '../base/variables';
+header {
+    .navbar {
+        .menu {
+            .item {
+                color: $fondo;
+                
+            }
+        }
+    }
+   
+    
+}
+
+
+
+
+
+
+* { background-color: blueviolet;}
+
+.animate__animated {
+    animation: bounce; 
+    animation-duration: 5s;
+  }
+
+.logo-auto {
+    width: 50%;
+    height: 20%;
+}
+
+.nav-link {
+    font-size: 40px;
+    color: black;
+    text-decoration: solid;
+        }
