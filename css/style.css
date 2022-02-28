@@ -1,7 +1,13 @@
 #Contacto {
   font-size: 30px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.iframe {
+  display: flex;
+  justify-content: end;
   padding: 5%;
-  color: black;
 }
 
 .redes {
@@ -23,69 +29,101 @@
 }
 
 header .navbar .menu .item {
-  color: red;
+  color: #000032;
 }
 
-* {
-  background-color: blueviolet;
+body {
+  background-color: #000032;
 }
 
-.animate__animated {
-  animation: bounce;
-  animation-duration: 5s;
-}
-
-.logo-auto {
+.logo {
   width: 50%;
-  height: 20%;
 }
 
-.nav-link {
-  font-size: 40px;
-  color: black;
-  text-decoration: solid;
+.navbar {
+  background-color: yellow;
+  font-size: 30px;
 }
 
 .nosotros-h1 {
   text-align: center;
-  text-shadow: 1px 1px red;
-  margin-bottom: 100px;
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 50px;
   text-decoration-line: underline;
-  color: black;
+  color: yellow;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .nosotros {
   text-align: center;
-  color: black;
-  font-size: 20px;
-  text-shadow: 1px 1px red;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .parrafo {
-  font-size: 20px;
-  color: black;
+  font-size: 30px;
+  color: white;
   text-align: left;
+}
+
+.servicios1 {
+  padding: 20px;
 }
 
 #Precios {
   font-size: 30px;
-  padding: 5%;
-  color: black;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.precios-lista {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 100px;
+  text-decoration: underline;
+}
+
+.medios-de-pago {
+  text-align: center;
+}
+
+.pagos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagos img {
+  height: 100px;
+  width: 100px;
+}
+
+.unidades1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.unidades2 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.unidades3 {
+  padding: 30px;
 }
 
 h2 {
-  text-shadow: 1px 1px red;
-  margin-bottom: 100px;
-  margin-top: 5%;
-  padding: 3%;
+  margin-bottom: 50px;
+  margin-top: 20%;
+  text-align: left;
   font-size: 50px;
-  display: flex;
-  justify-content: center;
   text-decoration-line: underline;
-  color: black;
+  color: yellow;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*# sourceMappingURL=style.css.map */
