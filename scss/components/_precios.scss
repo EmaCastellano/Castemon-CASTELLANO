@@ -11,16 +11,84 @@
         text-decoration: underline
     }
 
-.medios-de-pago {
-    text-align: center;
+    @media screen and (max-width: 490px) {
+        #Precios {
+            font-size: 15px;
+        }
+        .precios-lista {
+            font-size: 14px;
+            margin-top: 50px;
+        }
     }
 
-    .pagos {
+    /*MEDIOS DE PAGO*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+        }
+                
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 4; 
+        display: flex;
+        justify-content: center;}
+
+    .div2 { 
+        grid-area: 2 / 1 / 3 / 2;
+        }
+
+    .div3 { grid-area: 2 / 2 / 3 / 3;
+        }
+
+    .div4 { grid-area: 2 / 3 / 3 / 4;
+        }
+
+    .div2, .div3, .div4 { 
         display: flex;
         justify-content: space-around;
-    }
+        }
 
-    .pagos img {
-        height: 100px;
-        width: 100px;
-            }
+    .div2 { 
+        height: 200px;
+        width: 100%;
+        }
+
+    .div3 { 
+        height: 200px;
+        width: 100%;
+        }
+
+    .div4 { 
+        height: 200px;
+        width: 100%;
+        }
+
+@media screen and (max-width: 490px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 3 / 1 / 4 / 2; }
+        .div4 { grid-area: 4 / 1 / 5 / 2; }
+}
+
+@media screen and (max-width: 490px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 2 / 1 / 3 / 2; 
+        height: 100px;}
+        .div3 { grid-area: 3 / 1 / 4 / 2;
+        height: 100px; }
+        .div4 { grid-area: 4 / 1 / 5 / 2;
+        height: 100px; }
+    }

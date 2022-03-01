@@ -7,3 +7,11 @@ h2 {
     color: yellow;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+@media screen and (max-width: 490px) {
+    h2 {
+        margin-bottom: 25px;
+        margin-top: 10%;
+        font-size: 25px;
+    }
+}

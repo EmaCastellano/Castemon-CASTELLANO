@@ -1,18 +1,27 @@
 .unidades1 {
     font-size: 30px;
     color: white;
-    text-align: center;   
-    padding: 20px;
-} 
+    text-align: center;
+    } 
 
 .unidades2 {
     font-size: 30px;
     color: white;
     text-align: center;
-     padding: 20px;
-} 
+    } 
 
 .unidades3 {
-    padding: 30px;
-    
-}
+    padding: 50px;
+    }
+
+    @media screen and (max-width: 490px) {
+        .unidades1 {
+            font-size: 15px;
+        }
+        .unidades2 {
+            font-size: 15px;
+        }
+        .unidades3 {
+            padding: 25px;
+        }
+    }

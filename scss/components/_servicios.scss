@@ -2,9 +2,20 @@
     font-size: 30px;
     color: white;
     text-align: left;
-    
-} 
+    padding: 30px;
+    } 
 
 .servicios1 {
-    padding: 20px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 490px) {
+    .parrafo {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .servicios1 {
+        padding: 25px;
+    }
 }

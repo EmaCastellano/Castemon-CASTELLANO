@@ -9,3 +9,9 @@
     justify-content: end;
     padding: 5%;
 }
+
+@media screen and (max-width: 490px) {
+    #Contacto {
+        font-size: 15px;
+    }
+}
