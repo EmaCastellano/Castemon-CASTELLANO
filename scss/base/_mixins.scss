@@ -1,0 +1,19 @@
+ @mixin colores($color) {
+    color: $color;
+ }
+
+.nosotros {
+    @include colores(white)
+}
+
+.h2 {
+    @include colores(white)
+}
+
+.unidades1 {
+    @include colores(white)
+}
+
+.unidades2 {
+    @include colores(white)
+}
