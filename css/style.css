@@ -3,18 +3,17 @@
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-.iframe {
+#Contacto .iframe {
   display: flex;
   justify-content: end;
   padding: 5%;
 }
-
 @media screen and (max-width: 490px) {
   #Contacto {
     font-size: 15px;
   }
 }
+
 .redes {
   display: flex;
   justify-content: space-around;
@@ -33,30 +32,28 @@
   transform: scale(2);
 }
 
-header .navbar .logo .menu .item {
-  color: #000032;
-}
-
-.logo {
-  width: 50%;
-}
-
-.navbar {
+header .navbar {
   background-color: yellow;
   font-size: 40px;
 }
-
-body {
-  background-color: #000032;
+header .navbar .logo {
+  width: 50%;
 }
-
+header .navbar .menu .item {
+  color: red;
+}
 @media screen and (max-width: 490px) {
-  .navbar {
+  header .navbar {
     font-size: 20px;
   }
 }
+
+body {
+  background-color: #1900ff;
+}
+
 .nosotros-h1 {
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: center;
   margin-bottom: 50px;
   font-size: 50px;
@@ -82,6 +79,23 @@ body {
   .nosotros {
     font-size: 15px;
     margin-top: 2%;
+  }
+}
+h2 {
+  margin-bottom: 50px;
+  margin-top: 20%;
+  text-align: left;
+  font-size: 50px;
+  text-decoration-line: underline;
+  color: yellow;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 490px) {
+  h2 {
+    margin-bottom: 25px;
+    margin-top: 10%;
+    font-size: 25px;
   }
 }
 .parrafo {
@@ -134,41 +148,33 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
-
-.div1 {
+.parent .div1 {
   grid-area: 1/1/2/4;
   display: flex;
   justify-content: center;
 }
-
-.div2 {
+.parent .div2 {
   grid-area: 2/1/3/2;
 }
-
-.div3 {
+.parent .div3 {
   grid-area: 2/2/3/3;
 }
-
-.div4 {
+.parent .div4 {
   grid-area: 2/3/3/4;
 }
-
-.div2, .div3, .div4 {
+.parent .div2, .parent .div3, .parent .div4 {
   display: flex;
   justify-content: space-around;
 }
-
-.div2 {
+.parent .div2 {
   height: 200px;
   width: 100%;
 }
-
-.div3 {
+.parent .div3 {
   height: 200px;
   width: 100%;
 }
-
-.div4 {
+.parent .div4 {
   height: 200px;
   width: 100%;
 }
@@ -249,23 +255,6 @@ body {
 
   .unidades3 {
     padding: 25px;
-  }
-}
-h2 {
-  margin-bottom: 50px;
-  margin-top: 20%;
-  text-align: left;
-  font-size: 50px;
-  text-decoration-line: underline;
-  color: yellow;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-@media screen and (max-width: 490px) {
-  h2 {
-    margin-bottom: 25px;
-    margin-top: 10%;
-    font-size: 25px;
   }
 }
 .nosotros {

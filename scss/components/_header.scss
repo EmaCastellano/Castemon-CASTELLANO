@@ -2,32 +2,29 @@
 @import '../base/maps';
 
 header {
-    .navbar { 
-        .logo { 
-            .menu {
-                .item { color: $fondo;}
+
+    .navbar {
+        background-color: yellow;
+        font-size: 40px;
+             
+        .logo {
+            width: map-get($header, width);
+
+        }
+
+        .menu {
+            .item {
+            color: $fondo;
             }
         }
+
+        @media screen and (max-width: 490px) {
+            font-size: 20px;
+        }
     }
+
 }
-
-.logo {
-    width: map-get($header, width)
-    }
-
-.navbar {
-    background-color: yellow;
-    font-size: 40px;
-    }
 
 body {
-    background-color: rgb(0, 0, 50);
+    background-color: rgb(25, 0, 255);
     }
-
-    
-
-@media screen and (max-width: 490px) {
-    .navbar {
-        font-size: 20px;
-    }
-}

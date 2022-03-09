@@ -4,16 +4,15 @@
     font-size: 30px; 
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-.iframe {
-    display: flex;
-    justify-content: end;
-    padding: 5%;
-}
-
-@media screen and (max-width: 490px) {
-    #Contacto {
+    .iframe {
+        display: flex;
+        justify-content: end;
+        padding: 5%;
+    }
+    
+    @media screen and (max-width: 490px) {
         font-size: 15px;
     }
 }
+
