@@ -6,10 +6,9 @@ header {
     .navbar {
         background-color: yellow;
         font-size: 40px;
-             
+                     
         .logo {
             width: map-get($header, width);
-
         }
 
         .menu {

@@ -8,14 +8,17 @@
     text-decoration-line: underline;
     color: yellow;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    animation-duration: 5s;
     } 
 
 .nosotros { 
     text-align: center;
     margin-top: 5%;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 10px outset blueviolet;
+    margin-top: 2%;
     }
 
     @media screen and (max-width: 490px) {
@@ -32,6 +35,7 @@
     }
 
     h2 { 
+        animation-duration: 5s;
         margin-bottom: 50px;
         margin-top: 20%;
         text-align: left;

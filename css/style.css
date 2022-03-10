@@ -40,7 +40,7 @@ header .navbar .logo {
   width: 50%;
 }
 header .navbar .menu .item {
-  color: red;
+  color: #1900ff;
 }
 @media screen and (max-width: 490px) {
   header .navbar {
@@ -60,14 +60,17 @@ body {
   text-decoration-line: underline;
   color: yellow;
   font-family: Georgia, "Times New Roman", Times, serif;
+  animation-duration: 5s;
 }
 
 .nosotros {
   text-align: center;
   margin-top: 5%;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 10px outset blueviolet;
+  margin-top: 2%;
 }
 
 @media screen and (max-width: 490px) {
@@ -82,6 +85,7 @@ body {
   }
 }
 h2 {
+  animation-duration: 5s;
   margin-bottom: 50px;
   margin-top: 20%;
   text-align: left;
@@ -99,10 +103,12 @@ h2 {
   }
 }
 .parrafo {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   text-align: left;
   padding: 30px;
+  border: 10px outset blueviolet;
+  margin-top: 2%;
 }
 
 .servicios1 {
@@ -229,15 +235,19 @@ h2 {
   }
 }
 .unidades1 {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  text-align: center;
+  text-align: left;
+  border: 10px outset blueviolet;
+  margin-top: 2%;
 }
 
 .unidades2 {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  text-align: center;
+  text-align: left;
+  border: 10px outset blueviolet;
+  margin-top: 2%;
 }
 
 .unidades3 {

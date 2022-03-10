@@ -1,18 +1,23 @@
 .unidades1 {
-    font-size: 30px;
+    font-size: 20px;
     color: white;
-    text-align: center;
+    text-align: left;
+    border: 10px outset blueviolet;
+    margin-top: 2%;
     } 
 
 .unidades2 {
-    font-size: 30px;
+    font-size: 20px;
     color: white;
-    text-align: center;
+    text-align: left;
+    border: 10px outset blueviolet;
+    margin-top: 2%;
     } 
 
 .unidades3 {
     padding: 50px;
     }
+
 
     @media screen and (max-width: 490px) {
         .unidades1 {
