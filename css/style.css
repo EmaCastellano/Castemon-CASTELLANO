@@ -148,11 +148,12 @@ h4 {
     padding: 15px;
   }
 }
-.parrafo .servicios1 {
+
+.servicios1 {
   padding: 200px;
 }
 @media screen and (max-width: 490px) {
-  .parrafo .servicios1 {
+  .servicios1 {
     padding: 25px;
   }
 }
