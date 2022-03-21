@@ -8,6 +8,8 @@
     text-decoration-line: underline;
     color: #FA58B6;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: heartBeat;
+  animation-duration: 2s;
     
     @media screen and (max-width: 490px) {
             margin-top: 5%;
@@ -36,12 +38,12 @@
     h2 { 
         margin-bottom: 50px;
         margin-top: 20%;
-        text-align: left;
+        text-align: center;
         font-size: 50px;
         text-decoration-line: underline; 
         color: #FA58B6;
         background-color: #270082;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 
         @media screen and (max-width: 490px) {
