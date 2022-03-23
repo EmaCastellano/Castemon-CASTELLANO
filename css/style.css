@@ -46,7 +46,7 @@
 
 header .navbar {
   position: sticky;
-  top: 100%;
+  top: 0;
   background-color: #7A0BC0;
   font-size: 40px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -152,7 +152,7 @@ h4 {
 }
 
 .servicios1 {
-  padding: 200px;
+  /*padding: 200px;*/
 }
 @media screen and (max-width: 490px) {
   .servicios1 {
@@ -245,7 +245,7 @@ h4 {
 }
 
 .unidades3 {
-  padding: 200px;
+  /*padding: 200px;*/
 }
 @media screen and (max-width: 490px) {
   .unidades3 {
