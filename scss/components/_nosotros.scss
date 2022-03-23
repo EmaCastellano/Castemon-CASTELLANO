@@ -9,7 +9,7 @@
     color: #FA58B6;
     font-family: Georgia, 'Times New Roman', Times, serif;
     animation: heartBeat;
-  animation-duration: 2s;
+    animation-duration: 2s;
     
     @media screen and (max-width: 490px) {
             margin-top: 5%;
@@ -22,6 +22,7 @@
     text-align: center;
     margin-top: 5%;
     color: white;
+    font-style: oblique;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 10px outset #7A0BC0;    
@@ -29,8 +30,7 @@
 
     @media screen and (max-width: 490px) {
             font-size: 15px;
-            margin-top: 2%;
-        
+            margin-top: 2%;        
     }
 
     }
@@ -38,37 +38,33 @@
     h2 { 
         margin-bottom: 50px;
         margin-top: 20%;
-        text-align: center;
+        text-align: center;        
         font-size: 50px;
-        text-decoration-line: underline; 
+        text-decoration: underline;
         color: #FA58B6;
         background-color: #270082;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
-
-        @media screen and (max-width: 490px) {
-            
+        @media screen and (max-width: 490px) {            
         margin-bottom: 25px;
         margin-top: 10%;
-        font-size: 30px;
-            
+        font-size: 30px;            
         }
     }
 
-    h4    { 
-            margin-bottom: 50px;
-            margin-top: 20%;
-            text-align: left;
-            font-size: 30px;
-            text-decoration-line: underline; 
-            color: #FA58B6;
-            background-color: #270082;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+    h4 {
+        margin-bottom: 50px;
+        margin-top: 20%;
+        text-align: left;
+        font-size: 30px;
+        text-decoration-line: underline; 
+        color: #FA58B6;
+        background-color: #270082;
+        font-family: Georgia, 'Times New Roman', Times, serif;
 
-            @media screen and (max-width: 490px) {                
-                    margin-bottom: 25px;
-                    margin-top: 10%;
-                    font-size: 20px;
-                
-                }
+        @media screen and (max-width: 490px) {                
+        margin-bottom: 25px;
+        margin-top: 10%;
+        font-size: 20px;                
+        }
     }
