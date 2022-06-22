@@ -1,3 +1,10 @@
+.formulario {
+  width: 220px;  
+  margin-left: 120px;
+  text-align: center;
+}
+
+
 #Contacto {
   font-size: 30px;
   color: white;

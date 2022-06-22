@@ -15,8 +15,7 @@
 <!-- Animate CSS -->
 <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
  <!-- CSS -->
  <link rel="stylesheet" href="css/style.css">
@@ -84,24 +83,74 @@
 
 <!-- Inicio seccion servicios -->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contratacion de Servicio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
+      </div>
+      <div class="modal-body">
+        <form id="my-form" class="formulario" action="">
+          <label for="Nombre">Nombre</label>
+          <input id="input-nombre" type="text">
+          <br>
+          <hr>
+          <label for="Apellido">Apellido</label>
+          <input id="input-apellido" type="text">
+          <br>
+          <hr>
+          <label for="Email">Email</label>
+          <input id="input-email" type="text">
+          <br>
+          <hr>
+          <label for="Celular">Celular</label>
+          <input id="input-celular" type="number">
+          <br>
+          <hr>
+          <label for="Punto de partida">Punto de partida</label>
+          <input id="input-puntoDePartida" type="text">
+          <br>
+          <hr>
+          <label for="Punto de llegada">Punto de llegada</label>
+          <input id="input-puntoDeLlegada" type="text">
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button id="btn-enviar" type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <section id="Servicios">
 
       <h2> Servicios </h2>
-         <div id="carouselExampleFade" class="carousel slide carousel-fade servicios1" data-bs-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade servicios1" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="Archivos/amba.jpg" class="d-block w-100" alt="Mapa amba">
             <p class="parrafo">Hacemos viajes en el Área Metropolitana de Buenos Aires.
               En los cuales se destacan viajes empresariales y servicio de remis.</p>
+              
+              <button id="contratar" data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button" class="btn btn-warning"><b>CONTRATAR SERVICIO</b></button>
           </div>
+
           <div class="carousel-item">
             <img src="Archivos/buenos-aires.jpeg" class="d-block w-100" alt="Mapa buenos-aires">
             <p class="parrafo">Hacemos viajes en la provincia de Buenos Aires.
               En los cuales se destacan las mudanzas y el transporte de mercadería. </p>
+              <button id="contratar" data-bs-toggle="modal" data-bs-target="#exampleModal"  type="button" class="btn btn-warning"><b>CONTRATAR SERVICIO</b></button>
           </div>
+
           <div class="carousel-item">
             <img src="Archivos/argentina.jpeg" class="d-block w-100" alt="Mapa argentina">
             <p class="parrafo">Hacemos viajes a lo largo y a lo ancho de todo el país, abasteciendo a las principales empresas de insumos y materia prima.</p>
+            <button id="contratar" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-warning"><b>CONTRATAR SERVICIO</button>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -113,15 +162,14 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-     <!-- Fin seccion servicios -->
+    <!-- Fin seccion servicios -->
 
-   <!-- Inicio seccion unidades -->
+  <!-- Inicio seccion unidades -->
 
-   <section id="Unidades">
-     
+  <section id="Unidades">
     <h2> Unidades </h2>
 
-   <div id="carouselExampleControls" class="carousel slide unidades3" data-bs-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide unidades3" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="Archivos/unidad-1.jpeg" class="d-block w-100" alt="Moto">
@@ -145,7 +193,7 @@
   </div>
 
 
-   <div id="carouselExampleInterval" class="carousel slide unidades3" data-bs-ride="carousel">
+  <div id="carouselExampleInterval" class="carousel slide unidades3" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
         <img src="Archivos/unidad-4.jpeg" class="d-block w-100" alt="Camioneta">
@@ -220,11 +268,11 @@
 <!-- Inicio footer -->
 
 <footer>
-       <div class="redes">
+  <div class="redes">
 
       <a class="transicion" href="https://wwww.facebook.com/ServiciosCastemon"  target="_blank">
     <img src="Archivos/facebook.png" alt="logo facebook"></a>
-   
+
     <a class="transicion" href="https://wwww.twitter.com/ServiciosCastemon"  target="_blank">
     <img src="Archivos/gorjeo.png" alt="logo twitter"></a>
       
@@ -237,5 +285,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
 </body>
 </html>
