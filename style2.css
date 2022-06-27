@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(26, 26, 64);
+}
+h1,h2 {
+    margin: 0;
+    padding: 20px;
+    color: rgb(250, 88, 182);
+}
+
+
+.formulario {
+    width: 220px;  
+    margin-left: 120px;
+    text-align: center;
+}
+
+.modal-body {
+    background-color: rgb(26, 26, 64);
+}
+
+.modal-title { color: white;
+}
+
+label {
+    color: white;
+}
+
+.modal-header, .modal-footer{
+    background-color:rgb(250, 88, 182) ;
+}
+
+.btn-warning {
+    font-size: 50px;
+    visibility: hidden;
+    color: rgb(26, 26, 64);
+    background-color: red;
+    opacity: 1;
+}
