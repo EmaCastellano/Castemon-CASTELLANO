@@ -28,6 +28,16 @@ const agregarAlCarrito = (id) => {
     const item = stockProductos.find( (producto) => producto.id === id)
     carrito.push(item)
 
+    Toastify({
+        text: `Se agregó 1 unidad de ${item.nombre}`,
+        position: 'right',
+        gravity: 'bottom',
+        duration: 5000,
+        style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+        }
+    }).showToast()
+
     localStorage.setItem('carrito', JSON.stringify(carrito))
 
     console.log(carrito)
@@ -41,12 +51,23 @@ const removerDelCarrito = (id) => {
     const indice = carrito.indexOf(item)
     carrito.splice(indice, 1)
 
+    Toastify({
+        text: `Se eliminó 1 unidad de ${item.nombre}`,
+        position: 'left',
+        gravity: 'bottom',
+        duration: 5000,
+        style: {
+            background: "linear-gradient(to right, #f17b5d, #f02f2f)",
+        }
+    }).showToast()
+
     localStorage.setItem('carrito', JSON.stringify(carrito))
 
     renderCarrito()
     renderCantidad()
     renderTotal()
 }
+
 
 const vaciarCarrito = () => {
     carrito.length = 0
@@ -58,7 +79,34 @@ const vaciarCarrito = () => {
     renderTotal()
 }
 
-btnVaciar.addEventListener('click', vaciarCarrito)
+btnVaciar.addEventListener('click', () => {
+    Swal.fire({
+        title: 'Estas seguro?',
+        text: "Seguro seguro? Mira que esto es irreversible",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, vaciame todo',
+        cancelButtonText: 'No, mejor no'
+    }).then( (result) => {
+            if (result.isConfirmed) {
+                vaciarCarrito()
+                botonCerrar.click()
+                Toastify({
+                    text: 'Se vació el carrito',
+                    position: 'left',
+                    gravity: 'bottom',
+                    duration: 5000,
+                    style: {
+                        background: "linear-gradient(to right, #f17b5d, #f02f2f)",
+                    }
+                }).showToast()
+            }
+    } )
+})
+
+
 
 const renderCarrito = () => {
     carritoContenedor.innerHTML = ''
@@ -70,7 +118,7 @@ const renderCarrito = () => {
         div.innerHTML = `
                     <p>${item.nombre}</p>
                     <p>Precio: $${item.precio}</p>
-                    <button onclick="removerDelCarrito(${item.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                    <button  onclick="removerDelCarrito(${item.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
                     `
         
         carritoContenedor.append(div)
