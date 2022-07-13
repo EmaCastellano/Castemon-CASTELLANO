@@ -9,7 +9,14 @@ const btnVaciar = document.getElementById('vaciarCarrito')
 let carrito
 const carritoEnLS = JSON.parse( localStorage.getItem('carrito') )
 
-stockProductos.forEach((producto) => {
+let stock = []
+
+fetch('./stock.json')
+    .then((resp) => resp.json())
+    .then((data) => {
+        stock = data
+
+stock.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
 
@@ -23,9 +30,11 @@ stockProductos.forEach((producto) => {
 
     productosContainer.append(div)
 })
+    })
 
 const agregarAlCarrito = (id) => {
-    const item = stockProductos.find( (producto) => producto.id === id)
+    const item = stock
+    .find( (producto) => producto.id === id)
     carrito.push(item)
 
     Toastify({
