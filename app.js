@@ -33,8 +33,7 @@ stock.forEach((producto) => {
     })
 
 const agregarAlCarrito = (id) => {
-    const item = stock
-    .find( (producto) => producto.id === id)
+    const item = stock.find( (producto) => producto.id === id)
     carrito.push(item)
 
     Toastify({
@@ -138,6 +137,7 @@ const renderCantidad = () => {
     contadorCarrito.innerText = carrito.length
 }
 
+
 const renderTotal = () => {
     let total = 0
     carrito.forEach((producto) => {
@@ -146,7 +146,6 @@ const renderTotal = () => {
 
     precioTotal.innerText = total
 }
-
 
 if (carritoEnLS) {
     carrito = carritoEnLS
